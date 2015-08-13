@@ -39,7 +39,7 @@
 
 // 建立一個 list
 var List = {
-  Nil: {},
+  Nil: {}, //<-- 這個是個辨識用的屬性
   fromArray: function(list, arr) {
     if (arr.length === 0) return list;
     else return this.fromArray(
